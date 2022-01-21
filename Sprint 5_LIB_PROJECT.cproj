@@ -141,6 +141,15 @@
     <Compile Include="02-MCAL\DIO_Git\DIO.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="03-HAL\Keypad\KPD_config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="03-HAL\Keypad\KPD_implementation.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="03-HAL\Keypad\KPD_Interface.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="03-HAL\LCD\Config.h">
       <SubType>compile</SubType>
     </Compile>
@@ -160,6 +169,7 @@
     <Folder Include="02-MCAL\ADC\" />
     <Folder Include="02-MCAL\DIO_Git\" />
     <Folder Include="03-HAL\" />
+    <Folder Include="03-HAL\Keypad\" />
     <Folder Include="03-HAL\LCD\" />
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />

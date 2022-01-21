@@ -38,6 +38,7 @@ SUBDIRS :=  \
 ../02-MCAL/ADC/ \
 ../02-MCAL/DIO_Git/ \
 ../03-HAL/ \
+../03-HAL/Keypad/ \
 ../03-HAL/LCD/
 
 
@@ -45,6 +46,7 @@ SUBDIRS :=  \
 C_SRCS +=  \
 ../02-MCAL/ADC/ADC_Implementation.c \
 ../02-MCAL/DIO_Git/DIO.c \
+../03-HAL/Keypad/KPD_implementation.c \
 ../03-HAL/LCD/implementation.c \
 ../main.c
 
@@ -58,24 +60,28 @@ ASM_SRCS +=
 OBJS +=  \
 02-MCAL/ADC/ADC_Implementation.o \
 02-MCAL/DIO_Git/DIO.o \
+03-HAL/Keypad/KPD_implementation.o \
 03-HAL/LCD/implementation.o \
 main.o
 
 OBJS_AS_ARGS +=  \
 02-MCAL/ADC/ADC_Implementation.o \
 02-MCAL/DIO_Git/DIO.o \
+03-HAL/Keypad/KPD_implementation.o \
 03-HAL/LCD/implementation.o \
 main.o
 
 C_DEPS +=  \
 02-MCAL/ADC/ADC_Implementation.d \
 02-MCAL/DIO_Git/DIO.d \
+03-HAL/Keypad/KPD_implementation.d \
 03-HAL/LCD/implementation.d \
 main.d
 
 C_DEPS_AS_ARGS +=  \
 02-MCAL/ADC/ADC_Implementation.d \
 02-MCAL/DIO_Git/DIO.d \
+03-HAL/Keypad/KPD_implementation.d \
 03-HAL/LCD/implementation.d \
 main.d
 
@@ -101,6 +107,13 @@ LINKER_SCRIPT_DEP+=
 	
 
 02-MCAL/DIO_Git/DIO.o: ../02-MCAL/DIO_Git/DIO.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega32 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+03-HAL/Keypad/KPD_implementation.o: ../03-HAL/Keypad/KPD_implementation.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega32 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

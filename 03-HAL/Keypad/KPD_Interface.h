@@ -9,9 +9,9 @@
 #ifndef KPD_INTERFACE_H_
 #define KPD_INTERFACE_H_
 
-void KPD_init(void);
-void KPD_getVal(uint8_t *kpdVal);
-void msdelay(unsigned int time);
+void KPD_init(void);  //initialization function
+void KPD_getVal(uint8_t *kpdVal); //function to return keypad value into the pointer kpdVal
+void KPD_msdelay(uint8_t time); //delay to reduce bouncing
 
 
 

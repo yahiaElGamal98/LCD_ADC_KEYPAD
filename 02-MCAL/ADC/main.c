@@ -4,6 +4,7 @@
  * Created: 1/18/2022 4:12:38 PM
  * Author : No. 01
  */ 
+#include <stdlib.h>
 
 #include "01-LIB/STD_types.h"
 #include "01-LIB/Registers.h"
@@ -14,17 +15,22 @@
 
 int main()
 {
-	uint8_t u8_KPD_val;
-	KPD_init();		/*initialization of keypad */
+	char String[5];
+	uint16_t value;
+
+	ADC_init();
 	LCD_init();			/* Initialization of LCD */
-	LCD_sendStr("KeyPad button");	/* Write string on 1st line of LCD */
+	LCD_sendStr("TEMP value");	/* Write string on 1st line of LCD */
 	
 	while(1)
 	{
 		
-		LCD_goToXY(LINE_2,8);	/* LCD16x2 cursor position */
-		KPD_getVal(&u8_KPD_val);	/*get Keypad value*/
-		LCD_sendChar(u8_KPD_val); /*Send it to LCD*/
+		LCD_goToXY(LINE_2,12);	/* LCD16x2 cursor position */
+		ADC_read(0,&value);	/* Read ADC channel 0 */
+		value=value*4.88;
+		value=value/10;
+		itoa(value,String,10);	/* Integer to string conversion */
+		LCD_sendStr(String);
 		LCD_sendStr("  ");
 		msdelay(200);
 	}

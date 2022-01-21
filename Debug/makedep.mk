@@ -6,6 +6,8 @@
 
 02-MCAL\DIO_Git\DIO.c
 
+03-HAL\Keypad\KPD_implementation.c
+
 03-HAL\LCD\implementation.c
 
 main.c

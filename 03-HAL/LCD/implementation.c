@@ -21,12 +21,13 @@ ST_DIO_config_t ST_LCD_D6_config = {LCD_PORT,LCD_D6_PIN,OUTPUT};
 ST_DIO_config_t ST_LCD_D7_config = {LCD_PORT,LCD_D7_PIN,OUTPUT};
 
 //rough delay in milliseconds (validated by LEDs) 
-void msdelay(unsigned int time)
+void msdelay(uint8_t time)
 {
-	volatile unsigned int i,j;
-	for(i=0;i<time;i++)
+	volatile uint8_t u8_index;
+	volatile uint16_t u16_index;
+	for(u8_index=0;u8_index<time;u8_index++)
 	{
-		for(j=0; j<450; j++)
+		for(u16_index=0; u16_index<450; u16_index++)
 		{
 			
 		}

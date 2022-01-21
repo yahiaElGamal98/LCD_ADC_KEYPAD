@@ -14,10 +14,10 @@
 #define LINE_2 1
 
 /***LCD COMMANDS***/
-#define BIT_MODE ((uint8_t)(0b00101000))	
-#define ON_CONTROL ((uint8_t)(0b00001110))
-#define DISPLAY_CLEAR ((uint8_t)(0b00000001))
-#define ENTRY_MODE ((uint8_t)(0b00000110))
+#define BIT_MODE ((uint8_t)(0b00101000))	//FUNCTION SET, 4 bit, 2-line display
+#define ON_CONTROL ((uint8_t)(0b00001110)) //DISPLAY ON, CURSOR ON, BLINKING OFF
+#define DISPLAY_CLEAR ((uint8_t)(0b00000001)) //CLEAR DISPLAY
+#define ENTRY_MODE ((uint8_t)(0b00000110))  //INCREMENT CURSOR
 #define HOME_POSITION_LINE_1 ((uint8_t)(0b10000000))
 #define HOME_POSITION_LINE_2 ((uint8_t)(0b11000000))
 
@@ -31,10 +31,10 @@ void LCD_sendStartCmd(uint8_t u8_cmd);
 void LCD_sendStr(sint8_t* u8_str);	
 //function that sends a single character to LCD
 void LCD_sendChar(uint8_t u8_char);
-//function that sends starting poition and line
+//function that sends starting position and line
 void LCD_goToXY(uint8_t line, uint8_t pos);
 //delay function for usage in the LCD
-void msdelay(unsigned int time);
+void msdelay(uint8_t time);
 
 
 

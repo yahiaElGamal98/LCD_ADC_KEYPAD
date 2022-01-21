@@ -271,7 +271,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x8d6
+.text           0x00000000      0x8a6
  *(.vectors)
  .vectors       0x00000000       0x54 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
                 0x00000000                __vector_default
@@ -366,83 +366,83 @@ END GROUP
  .text.DIO_port
                 0x0000029e       0x48 02-MCAL/DIO_Git/DIO.o
                 0x0000029e                DIO_port
- .text.msdelay  0x000002e6       0x52 03-HAL/LCD/implementation.o
+ .text.msdelay  0x000002e6       0x44 03-HAL/LCD/implementation.o
                 0x000002e6                msdelay
  .text.LCD_sendStartCmd
-                0x00000338       0x44 03-HAL/LCD/implementation.o
-                0x00000338                LCD_sendStartCmd
+                0x0000032a       0x40 03-HAL/LCD/implementation.o
+                0x0000032a                LCD_sendStartCmd
  .text.LCD_sendCmd
-                0x0000037c       0x8e 03-HAL/LCD/implementation.o
-                0x0000037c                LCD_sendCmd
+                0x0000036a       0x86 03-HAL/LCD/implementation.o
+                0x0000036a                LCD_sendCmd
  .text.LCD_init
-                0x0000040a       0x88 03-HAL/LCD/implementation.o
-                0x0000040a                LCD_init
+                0x000003f0       0x7c 03-HAL/LCD/implementation.o
+                0x000003f0                LCD_init
  .text.LCD_goToXY
-                0x00000492       0x1c 03-HAL/LCD/implementation.o
-                0x00000492                LCD_goToXY
+                0x0000046c       0x1c 03-HAL/LCD/implementation.o
+                0x0000046c                LCD_goToXY
  .text.LCD_sendChar
-                0x000004ae       0x8e 03-HAL/LCD/implementation.o
-                0x000004ae                LCD_sendChar
+                0x00000488       0x86 03-HAL/LCD/implementation.o
+                0x00000488                LCD_sendChar
  .text.LCD_sendStr
-                0x0000053c       0x26 03-HAL/LCD/implementation.o
-                0x0000053c                LCD_sendStr
- .text.main     0x00000562       0x94 main.o
-                0x00000562                main
+                0x0000050e       0x26 03-HAL/LCD/implementation.o
+                0x0000050e                LCD_sendStr
+ .text.main     0x00000534       0x92 main.o
+                0x00000534                main
  .text.libgcc.mul
-                0x000005f6       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
-                0x000005f6                __umulhisi3
+                0x000005c6       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+                0x000005c6                __umulhisi3
  .text.avr-libc.fplib
-                0x00000614       0x5e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
-                0x00000614                __fixunssfsi
+                0x000005e4       0x5e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                0x000005e4                __fixunssfsi
  .text.avr-libc.fplib
-                0x00000672       0x7a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
-                0x00000672                __floatunsisf
-                0x00000676                __floatsisf
+                0x00000642       0x7a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                0x00000642                __floatunsisf
+                0x00000646                __floatsisf
  .text.avr-libc.fplib
-                0x000006ec       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
-                0x000006ec                __fp_split3
-                0x000006fc                __fp_splitA
+                0x000006bc       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                0x000006bc                __fp_split3
+                0x000006cc                __fp_splitA
  .text.avr-libc.fplib
-                0x00000730        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
-                0x00000730                __fp_zero
-                0x00000732                __fp_szero
+                0x00000700        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                0x00000700                __fp_zero
+                0x00000702                __fp_szero
  .text.avr-libc.fplib
-                0x0000073e        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
-                0x0000073e                __mulsf3
+                0x0000070e        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                0x0000070e                __mulsf3
  .text.avr-libc.fplib
-                0x00000746       0xd2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
-                0x00000764                __mulsf3x
-                0x0000076a                __mulsf3_pse
+                0x00000716       0xd2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                0x00000734                __mulsf3x
+                0x0000073a                __mulsf3_pse
  .text.avr-libc.fplib
-                0x00000818        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
-                0x00000818                __fp_inf
+                0x000007e8        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                0x000007e8                __fp_inf
  .text.avr-libc.fplib
-                0x00000824        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
-                0x00000824                __fp_nan
+                0x000007f4        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                0x000007f4                __fp_nan
  .text.avr-libc.fplib
-                0x0000082a        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
-                0x0000082a                __fp_pscA
+                0x000007fa        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                0x000007fa                __fp_pscA
  .text.avr-libc.fplib
-                0x00000838        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
-                0x00000838                __fp_pscB
+                0x00000808        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                0x00000808                __fp_pscB
  .text.avr-libc.fplib
-                0x00000846       0x22 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
-                0x00000846                __fp_round
+                0x00000816       0x22 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                0x00000816                __fp_round
  .text.avr-libc
-                0x00000868       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(itoa_ncheck.o)
-                0x00000868                __itoa_ncheck
+                0x00000838       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(itoa_ncheck.o)
+                0x00000838                __itoa_ncheck
  .text.avr-libc
-                0x0000087e       0x34 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(utoa_ncheck.o)
-                0x0000087e                __utoa_ncheck
-                0x00000880                __utoa_common
+                0x0000084e       0x34 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(utoa_ncheck.o)
+                0x0000084e                __utoa_ncheck
+                0x00000850                __utoa_common
  .text.avr-libc
-                0x000008b2       0x20 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strrev.o)
-                0x000008b2                strrev
-                0x000008d2                . = ALIGN (0x2)
+                0x00000882       0x20 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strrev.o)
+                0x00000882                strrev
+                0x000008a2                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000008d2        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x000008d2                _exit
-                0x000008d2                exit
+ .fini9         0x000008a2        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x000008a2                _exit
+                0x000008a2                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -461,11 +461,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000008d2        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x000008a2        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x000008d6                _etext = .
+                0x000008a6                _etext = .
 
-.data           0x00800060       0x24 load address 0x000008d6
+.data           0x00800060       0x24 load address 0x000008a6
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -507,8 +507,8 @@ END GROUP
  *(.bss*)
  *(COMMON)
                 [!provide]                PROVIDE (__bss_end, .)
-                0x000008d6                __data_load_start = LOADADDR (.data)
-                0x000008fa                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x000008a6                __data_load_start = LOADADDR (.data)
+                0x000008ca                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800084        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
@@ -596,13 +596,13 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x1415
+.debug_info     0x00000000     0x13c8
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_info    0x000004e6       0xf3 02-MCAL/ADC/ADC_Implementation.o
  .debug_info    0x000005d9      0x284 02-MCAL/DIO_Git/DIO.o
- .debug_info    0x0000085d      0x90c 03-HAL/LCD/implementation.o
- .debug_info    0x00001169      0x2ac main.o
+ .debug_info    0x0000085d      0x8c4 03-HAL/LCD/implementation.o
+ .debug_info    0x00001121      0x2a7 main.o
 
 .debug_abbrev   0x00000000      0x94d
  *(.debug_abbrev)
@@ -612,13 +612,13 @@ END GROUP
  .debug_abbrev  0x0000067f      0x170 03-HAL/LCD/implementation.o
  .debug_abbrev  0x000007ef      0x15e main.o
 
-.debug_line     0x00000000      0x7fd
+.debug_line     0x00000000      0x7fe
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x116 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_line    0x00000116       0xc8 02-MCAL/ADC/ADC_Implementation.o
  .debug_line    0x000001de      0x1f3 02-MCAL/DIO_Git/DIO.o
- .debug_line    0x000003d1      0x2cb 03-HAL/LCD/implementation.o
- .debug_line    0x0000069c      0x161 main.o
+ .debug_line    0x000003d1      0x2cc 03-HAL/LCD/implementation.o
+ .debug_line    0x0000069d      0x161 main.o
 
 .debug_frame    0x00000000      0x190
  *(.debug_frame)
@@ -627,16 +627,16 @@ END GROUP
  .debug_frame   0x000000a8       0xb4 03-HAL/LCD/implementation.o
  .debug_frame   0x0000015c       0x34 main.o
 
-.debug_str      0x00000000      0x560
+.debug_str      0x00000000      0x56a
  *(.debug_str)
  .debug_str     0x00000000      0x196 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_str     0x00000196      0x1b9 02-MCAL/ADC/ADC_Implementation.o
                                 0x1d7 (size before relaxing)
  .debug_str     0x0000034f       0xae 02-MCAL/DIO_Git/DIO.o
                                 0x22c (size before relaxing)
- .debug_str     0x000003fd      0x119 03-HAL/LCD/implementation.o
-                                0x2f6 (size before relaxing)
- .debug_str     0x00000516       0x4a main.o
+ .debug_str     0x000003fd      0x123 03-HAL/LCD/implementation.o
+                                0x2fc (size before relaxing)
+ .debug_str     0x00000520       0x4a main.o
                                 0x215 (size before relaxing)
 
 .debug_loc      0x00000000      0x5bc
